@@ -124,7 +124,7 @@ public class petLife {
 				while (state.getHealth() > 0) {
 					if (state.getInfection() < 1) {
 						if (Math.random() < 1/(100 * Math.pow(10,MoodArray.indexOf(state.getMood()))))
-						state.setInfection(1);
+							state.setInfection(1);
 					}
 	            	try {
 	            		Thread.sleep(sickDelay);

@@ -172,7 +172,13 @@ public class petLife {
 	}
 	
 	public LiveMetrics getState() {
-		return state;
+		LiveMetrics _state = new LiveMetrics();
+		_state.setHealth(state.getHealth());
+		_state.setHunger(state.getHunger());
+		_state.setThirst(state.getThirst());
+		_state.setMood(state.getMood());
+		_state.setInfection(0);
+		return _state;
 	}
 	
 	public boolean feed() {
